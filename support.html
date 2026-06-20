@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>回報問題 | GoManga</title>
+  <meta name="description" content="回報 GoManga app 的 issue、bug、閱讀器、來源、書庫或設定問題。">
+  <meta property="og:title" content="GoManga 回報問題">
+  <meta property="og:description" content="提供重現步驟、版本與診斷資訊，協助定位 GoManga app 問題。">
+  <meta property="og:image" content="assets/app-icon.png">
+  <link rel="icon" href="assets/app-icon.png">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="support-page">
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="GoManga 首頁">
+      <img src="assets/app-icon.png" alt="" width="36" height="36">
+      <span>GoManga</span>
+    </a>
+    <nav class="nav-links" aria-label="主要導覽">
+      <a href="getting-started.html">上手</a>
+      <a href="faq.html">FAQ</a>
+      <a aria-current="page" href="support.html">回報問題</a>
+      <a href="privacy.html">隱私</a>
+      <a href="terms.html">條款</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="support-hero" aria-labelledby="support-title">
+      <div class="shell support-hero-layout">
+        <div>
+          <p class="section-kicker">Report issue</p>
+          <h1 id="support-title">回報 GoManga 問題</h1>
+          <p>把版本、裝置、發生頁面與重現步驟整理成可追蹤的 issue。請移除私密資料後再送出。</p>
+        </div>
+        <img src="assets/launch-logo.png" alt="GoManga" width="300" height="213">
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell issue-layout">
+        <form class="issue-form" data-issue-form>
+          <div class="form-heading">
+            <p class="section-kicker">Issue details</p>
+            <h2>問題內容</h2>
+          </div>
+
+          <label>
+            <span>標題</span>
+            <input name="title" type="text" required placeholder="例如：閱讀器切到下一章後空白">
+          </label>
+
+          <div class="field-row">
+            <label>
+              <span>發生位置</span>
+              <select name="area" required>
+                <option value="Reader">閱讀器</option>
+                <option value="Manga Detail">漫畫詳情</option>
+                <option value="Library">書庫</option>
+                <option value="Lists">稍後閱讀 / 閱讀歷史</option>
+                <option value="Sources">來源 / Repositories</option>
+                <option value="Downloads">下載 / 備份</option>
+                <option value="Settings">設定</option>
+                <option value="Launch">啟動</option>
+                <option value="Other">其他</option>
+              </select>
+            </label>
+
+            <label>
+              <span>影響程度</span>
+              <select name="severity">
+                <option value="Blocks reading">無法閱讀</option>
+                <option value="Major workflow broken">主要流程壞掉</option>
+                <option value="Intermittent">偶發</option>
+                <option value="Cosmetic">畫面或文案</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="field-row">
+            <label>
+              <span>App 版本</span>
+              <input name="appVersion" type="text" placeholder="例如：1.0.0 (42)">
+            </label>
+
+            <label>
+              <span>iOS / iPadOS 版本</span>
+              <input name="osVersion" type="text" placeholder="例如：iOS 18.5">
+            </label>
+          </div>
+
+          <div class="field-row">
+            <label>
+              <span>裝置</span>
+              <input name="device" type="text" placeholder="例如：iPhone 16 Pro">
+            </label>
+
+            <label>
+              <span>來源或 host（選填）</span>
+              <input name="source" type="text" placeholder="只填可公開資訊，避免貼 cookie/token">
+            </label>
+          </div>
+
+          <label>
+            <span>重現步驟</span>
+            <textarea name="steps" required rows="5" placeholder="1. 開啟...
+2. 點選...
+3. 看到..."></textarea>
+          </label>
+
+          <label>
+            <span>預期結果</span>
+            <textarea name="expected" rows="3" placeholder="你原本預期 GoManga 要做什麼？"></textarea>
+          </label>
+
+          <label>
+            <span>實際結果</span>
+            <textarea name="actual" required rows="4" placeholder="實際看到的錯誤、空白、卡住、閃退或錯誤訊息。"></textarea>
+          </label>
+
+          <label>
+            <span>診斷資訊（選填）</span>
+            <textarea name="diagnostics" rows="4" placeholder="可貼錯誤摘要、截圖說明或診斷檔重點。請移除私密資料。"></textarea>
+          </label>
+
+          <label class="checkbox-line">
+            <input name="diagnosticsAvailable" type="checkbox">
+            <span>我可以另外附上 GoManga 診斷日誌或截圖</span>
+          </label>
+
+          <div class="actions">
+            <button class="button primary" type="submit">在 GitHub 建立 issue</button>
+            <a class="button neutral" href="https://github.com/go-manga/GoMangaApp/issues">查看既有 issues</a>
+          </div>
+        </form>
+
+        <aside class="side-panel" aria-labelledby="support-notes-title">
+          <img src="assets/launch-bg-2.png" alt="GoManga launch artwork">
+          <div>
+            <p class="section-kicker">Before sending</p>
+            <h2 id="support-notes-title">只提交定位問題需要的資訊。</h2>
+            <ul>
+              <li>閱讀器問題：請填章節切換、閱讀方向與是否可穩定重現。</li>
+              <li>來源問題：只填公開 host 或來源名稱，不要貼 cookie、token 或帳密。</li>
+              <li>診斷日誌：先確認內容不含私密資料再附上。</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section preview-section" aria-labelledby="preview-title">
+      <div class="shell preview-layout">
+        <div>
+          <p class="section-kicker">Generated issue</p>
+          <h2 id="preview-title">送出前的 issue 內容</h2>
+          <p>填寫欄位後，這裡會即時顯示送到 GitHub 的 Markdown 內容。</p>
+        </div>
+        <pre class="issue-preview" data-preview>等待填寫問題內容...</pre>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-layout">
+      <span>© 2026 GoManga Team</span>
+      <span>Do not include secrets in public reports.</span>
+    </div>
+  </footer>
+
+  <script src="assets/report.js"></script>
+</body>
+</html>

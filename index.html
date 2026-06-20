@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>GoManga | iOS 漫畫閱讀器</title>
-  <meta name="description" content="GoManga 是一款 iOS 漫畫閱讀器，讓你設定自己的漫畫來源、整理書庫，並延續閱讀進度。">
+  <meta name="description" content="GoManga 是 iOS 漫畫閱讀器與來源設定框架，專注於書庫、清單、閱讀器與本機優先的資料邊界。">
   <meta property="og:title" content="GoManga">
   <meta property="og:description" content="為 iOS 打造的可設定漫畫閱讀器。">
   <meta property="og:image" content="assets/app-icon.png">
@@ -18,10 +18,11 @@
       <span>GoManga</span>
     </a>
     <nav class="nav-links" aria-label="主要導覽">
-      <a href="#features">功能</a>
-      <a href="privacy.html">隱私政策</a>
-      <a href="terms.html">使用條款</a>
-      <a href="/GoMangaApp/">回報問題</a>
+      <a href="getting-started.html">上手</a>
+      <a href="faq.html">FAQ</a>
+      <a href="support.html">回報問題</a>
+      <a href="privacy.html">隱私</a>
+      <a href="terms.html">條款</a>
     </nav>
   </header>
 
@@ -31,11 +32,18 @@
         <img class="hero-logo" src="assets/launch-logo.png" alt="GoManga" width="320" height="227">
         <p class="eyebrow">iOS Manga Reader</p>
         <h1 id="hero-title">GoManga</h1>
-        <p class="hero-lede">把你設定的漫畫來源、書庫與閱讀進度放在同一個乾淨快速的 iOS 閱讀體驗裡。</p>
+        <p class="hero-lede">一個把你設定的來源、書庫、清單與閱讀進度整理在同一個 iOS 體驗裡的漫畫閱讀器。</p>
         <div class="hero-actions" aria-label="主要操作">
-          <a class="button primary" href="/GoMangaApp/">回報問題</a>
-          <a class="button secondary" href="privacy.html">查看隱私政策</a>
+          <a class="button primary" href="getting-started.html">開始使用</a>
+          <a class="button secondary" href="support.html">回報問題</a>
         </div>
+      </div>
+    </section>
+
+    <section class="notice-band" aria-label="產品定位">
+      <div class="shell notice-layout">
+        <strong>重要定位</strong>
+        <p>GoManga 不代管、不販售、不散佈漫畫內容，也不提供官方內容目錄。你加入的來源、檔案或服務由你自行設定與管理。</p>
       </div>
     </section>
 
@@ -43,8 +51,8 @@
       <div class="shell preview-layout">
         <div>
           <p class="section-kicker">Built from the app</p>
-          <h2>從啟動畫面到閱讀流程，維持一致的 GoManga 視覺。</h2>
-          <p>這個頁面使用 GoManga app 內的 launch、icon 與品牌素材，介紹 app 的定位、資料邊界與支援入口。</p>
+          <h2>品牌視覺來自 GoManga app 內素材。</h2>
+          <p>本網站使用 app icon、launch logo 與啟動畫面素材；網站本身不載入第三方 analytics 或翻譯腳本。</p>
         </div>
         <div class="phone-strip" aria-label="GoManga launch previews">
           <img src="assets/launch-bg-1.png" alt="GoManga launch preview 1">
@@ -56,51 +64,59 @@
 
     <section id="features" class="section" aria-labelledby="features-title">
       <div class="shell">
-        <p class="section-kicker">What GoManga does</p>
-        <h2 id="features-title">為可設定來源設計的閱讀工作流。</h2>
+        <p class="section-kicker">What GoManga covers</p>
+        <h2 id="features-title">只寫 app 確實負責的部分。</h2>
         <div class="feature-grid">
           <article class="feature-card">
             <span class="feature-number">01</span>
             <h3>來源由你設定</h3>
-            <p>GoManga 是閱讀框架，不代管漫畫內容。你可以加入自己要使用的來源與服務，app 負責把清單、詳情、章節與頁面串成一致體驗。</p>
+            <p>GoManga 是閱讀框架。來源、host、登入、授權與內容可用性取決於你自己的設定與第三方服務。</p>
           </article>
           <article class="feature-card">
             <span class="feature-number">02</span>
             <h3>書庫與清單</h3>
-            <p>書庫、稍後閱讀與閱讀歷史集中管理，讓日常重讀、續讀與找回進度都更直接。</p>
+            <p>書庫、稍後閱讀與閱讀歷史用來整理你已加入的作品與續讀脈絡。</p>
           </article>
           <article class="feature-card">
             <span class="feature-number">03</span>
             <h3>閱讀器</h3>
-            <p>針對漫畫章節、長篇頁面與閱讀方向設計，並保存你在書庫、清單與詳情頁之間的閱讀狀態。</p>
+            <p>閱讀器專注於章節閱讀、閱讀方向、進度保存，以及從詳情頁、書庫或清單回到閱讀狀態。</p>
           </article>
           <article class="feature-card">
             <span class="feature-number">04</span>
             <h3>本機優先</h3>
-            <p>書庫、設定、閱讀進度與診斷資料以裝置端為主；回報問題時才由你主動提供必要資訊。</p>
+            <p>設定、書庫、閱讀進度與診斷資料以裝置端為主；公開 issue 只包含你主動提交的資訊。</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section split-band" aria-labelledby="legal-title">
+    <section class="section split-band" aria-labelledby="docs-title">
       <div class="shell split-layout">
         <div>
-          <p class="section-kicker">Legal and support</p>
-          <h2 id="legal-title">隱私、使用條款與問題回報。</h2>
+          <p class="section-kicker">Docs and support</p>
+          <h2 id="docs-title">必要文件集中在這裡。</h2>
         </div>
         <div class="link-panel">
+          <a href="getting-started.html">
+            <strong>上手指南</strong>
+            <span>從 Repositories、Sources、書庫與閱讀器開始，說明最基本的使用路徑。</span>
+          </a>
+          <a href="faq.html">
+            <strong>FAQ</strong>
+            <span>整理來源、內容、隱私、支援與問題回報的常見邊界。</span>
+          </a>
+          <a href="support.html">
+            <strong>回報問題</strong>
+            <span>把重現步驟、環境與診斷資訊整理成 GitHub issue。</span>
+          </a>
           <a href="privacy.html">
             <strong>隱私政策</strong>
-            <span>資料如何保存在裝置、何時會離開裝置，以及問題回報的資料邊界。</span>
+            <span>說明裝置端資料、GitHub/GitHub Pages 與使用者主動提交資料的處理方式。</span>
           </a>
           <a href="terms.html">
             <strong>使用條款</strong>
-            <span>GoManga 不代管內容；使用者需自行確認來源與內容的使用權限。</span>
-          </a>
-          <a href="/GoMangaApp/">
-            <strong>回報問題</strong>
-            <span>提供重現步驟、裝置版本與可選診斷資訊，協助定位 app 問題。</span>
+            <span>說明來源責任、內容權利、第三方服務與免責聲明。</span>
           </a>
         </div>
       </div>
