@@ -1,5 +1,5 @@
 (function () {
-  const repoIssuesUrl = "https://github.com/go-manga/GoMangaApp/issues";
+  const repoIssuesUrl = "https://github.com/MangaFuru/MangaFuru/issues";
   const form = document.querySelector("[data-issue-form]");
   const preview = document.querySelector("[data-preview]");
   const copyButton = document.querySelector("[data-copy-template]");

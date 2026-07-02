@@ -37,6 +37,6 @@ Every page ships both languages inline. The switch keys off `<html lang>`:
 
 - Do not publish manga content, source recommendations, credentials, cookies, or tokens.
 - Do not promise support for a specific third-party source or host.
-- Keep all legal/support pages in this repository, not in `GoMangaApp`.
+- Keep all legal/support pages in this repository, not in the `MangaFuru` issue-intake repo.
 - Do not add analytics or third-party scripts unless the privacy policy is updated first.
 - Legal/privacy contact is `gomanga.support@gmail.com`; keep it consistent across pages.
